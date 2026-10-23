@@ -31,9 +31,11 @@
     addEventListener('pageshow',function(e){if(e.persisted){done=true;b.remove()}});
   })();
   </script>
-  <script type="module" crossorigin src="/assets/weather-DXwhEo6H.js"></script>
-  <script type="module" crossorigin src="/assets/main-DU7XZdY4.js"></script>
+  <script type="module" crossorigin src="/assets/weather-BbXUjqiZ.js"></script>
+  <script type="module" crossorigin src="/assets/main-C7HS5bx8.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/weather-gKUDQ7B-.css">
+  <link rel="preconnect" href="https://radio.ebxm.ru" crossorigin>
+  <link rel="preload" as="image" fetchpriority="high" href="/assets/collage-main-CdHQ76MN.webp">
 </head>
 <body>
 <header class="site"><div class="wrap header-in">
@@ -49,9 +51,7 @@
 </div></header>
 <div class="mobile-nav" id="mobileNav">
   <a href="/" class="active">Главная</a><a href="/about.html">Манифест</a>
-</div>
-
-<main id="view" data-page="home">
+</div><main id="view" data-page="home">
   <div class="main-collage" style="--shard-img:url('/assets/collage-main-CdHQ76MN.webp')" aria-hidden="true"></div>
 <section class="hero"><div class="hero-blobs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
   <div class="hero-collage" style="--shard-img:url('/assets/collage--79Tf3HQ.webp')" aria-hidden="true"></div><div class="wrap hero-grid">
@@ -67,28 +67,20 @@
       <p class="flame-note">Подкидывай огонь — общий костёр видят все.</p>
     </div>
   </div>
-</div></section>
-
-<section class="block wrap"><h2 class="sec-title reveal">Форматы</h2>
+</div></section><section class="block wrap"><h2 class="sec-title reveal">Форматы</h2>
   <div class="grid g4">
     <article class="card reveal"><div class="num">G-01</div><h3>Рок</h3><p>Гитарные стены, рваные риффы и живой драйв, собранный нейросетью из тысячи ночных сессий.</p></article>
     <article class="card red-bg reveal"><div class="num">G-02</div><h3>Постпанк</h3><p>Холодный бас, прямая бочка и серый город в каждом такте. Бетон, провода, туман.</p></article>
     <article class="card reveal"><div class="num">G-03</div><h3>Крик</h3><p>Вокал на пределе. Хардкор, нойз и всё, что нельзя ставить на обычном радио.</p></article>
     <article class="card reveal"><div class="num">G-04</div><h3>Протест</h3><p>Тексты-манифесты. Слова, за которые не стыдно. Слова, которые нельзя затереть.</p></article>
   </div>
-</section>
-
-<section class="block wrap"><h2 class="sec-title reveal">Последние в эфире</h2>
+</section><section class="block wrap"><h2 class="sec-title reveal">Последние в эфире</h2>
   <ul class="history" id="historyList"></ul>
 </section>
-</main>
-
-<div class="ticker" aria-hidden="true"><div class="ticker-track">
+</main><div class="ticker" aria-hidden="true"><div class="ticker-track">
   <span>АВТОРСКИЙ ЗВУК · ЖИВОЙ ДУХ</span><span>КРИЧИ ГРОМЧЕ АЛГОРИТМА</span><span>ПРОТЕСТ КАЖДЫЙ ДЕНЬ</span><span>НЕЙРОСЕТЬ НА ТВОЕЙ СТОРОНЕ</span><span>ЧЕЛОВЕК ЗАДАЁТ ДУХ — AI ПИШЕТ ЗВУК</span><span>РОК НЕ УМИРАЕТ</span>
   <span>АВТОРСКИЙ ЗВУК · ЖИВОЙ ДУХ</span><span>КРИЧИ ГРОМЧЕ АЛГОРИТМА</span><span>ПРОТЕСТ КАЖДЫЙ ДЕНЬ</span><span>НЕЙРОСЕТЬ НА ТВОЕЙ СТОРОНЕ</span><span>ЧЕЛОВЕК ЗАДАЁТ ДУХ — AI ПИШЕТ ЗВУК</span><span>РОК НЕ УМИРАЕТ</span>
-</div></div>
-
-<div class="wrap">
+</div></div><div class="wrap">
   <section class="player" aria-label="Плеер эфира">
     <video class="rain-overlay" muted loop playsinline preload="none" data-src="assets/rain-compressed.webm" aria-hidden="true"></video>
     <button class="fresh-btn" id="freshBtn" title="Давно не было новинок?">Давно не было новинок?</button>
@@ -118,9 +110,7 @@
       <svg class="ic-collapse" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9H7a2 2 0 0 0 2-2V3.5M20.5 9H17a2 2 0 0 1-2-2V3.5M3.5 15H7a2 2 0 0 1 2 2v3.5M20.5 15H17a2 2 0 0 0-2 2v3.5"/></svg>
     </button>
   </section>
-</div>
-
-<footer class="site"><div class="wrap"><span>EBx MUSIC — твоя авторская радиостанция на основе AI</span><span>© <span id="year"></span> · Человек задаёт дух а машина пишет звук!</span></div></footer>
+</div><footer class="site"><div class="wrap"><span>EBx MUSIC — твоя авторская радиостанция на основе AI</span><span>© <span id="year"></span> · Человек задаёт дух а машина пишет звук!</span></div></footer>
 <noscript><style>.player { transform: none !important; transition: none !important; }</style></noscript>
 </body>
 </html>
