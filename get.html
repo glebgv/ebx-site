@@ -86,16 +86,81 @@ html, body, a, button, label, .card, .dl-btn { cursor: auto !important; }
   <a href="/">Главная</a><a href="/about.html">Манифест</a><a href="/get" class="active">Приложение</a>
 </div><main id="view" data-page="get">
 <section class="block wrap"><h2 class="sec-title reveal">Приложение</h2>
-  <p class="get-sub">EBx NEURO ROCK для Android — эфир станции в кармане: перехват одним тапом, скачивание треков, пуши и узел новостей экипажа.</p>
-  <div class="get-meta"><span>Android 8+</span><span>v1.1.0 · ~68 МБ</span><span>БЕЗ РЕКЛАМЫ</span></div>
+
+  <!-- шапка приложения: иконка + название + мета + CTA -->
+  <div class="app-head reveal">
+    <img class="app-icon" src="/assets/icon-512.webp" width="96" height="96" alt="Иконка EBx NEURO ROCK" loading="eager">
+    <div class="app-head-info">
+      <h3 class="app-name">EBx NEURO ROCK</h3>
+      <p class="app-dev">EBx MUSIC · <a href="https://radio.ebxm.ru" target="_blank" rel="noopener">radio.ebxm.ru</a></p>
+      <div class="get-meta"><span>Android 8+</span><span>v1.1.0 · ~68 МБ</span><span>БЕЗ РЕКЛАМЫ</span></div>
+    </div>
+  </div>
+
+  <div class="app-cta reveal">
+    <a class="dl-btn dl-big" href="https://radio.ebxm.ru/app/ebx.apk" download>⬇ СКАЧАТЬ С СЕРВЕРА СТАНЦИИ</a>
+    <p class="note">При установке разреши «неизвестные источники» — это нормально. Обновления приложение проверяет само.</p>
+  </div>
+
+  <!-- лента скриншотов -->
+  <div class="shots-head reveal"><h4>Скриншоты</h4>
+    <div class="shots-nav">
+      <button class="shot-arrow" id="shotPrev" aria-label="Предыдущий скриншот">‹</button>
+      <button class="shot-arrow" id="shotNext" aria-label="Следующий скриншот">›</button>
+    </div>
+  </div>
+  <div class="shots reveal" id="shots">
+    <img class="shot" src="/assets/screens/shot-01.webp" alt="EBx NEURO ROCK — скриншот 1" loading="eager">
+    <img class="shot" src="/assets/screens/shot-02.webp" alt="EBx NEURO ROCK — скриншот 2" loading="lazy">
+    <img class="shot" src="/assets/screens/shot-03.webp" alt="EBx NEURO ROCK — скриншот 3" loading="lazy">
+    <img class="shot" src="/assets/screens/shot-04.webp" alt="EBx NEURO ROCK — скриншот 4" loading="lazy">
+  </div>
+  <div class="shots-dots" id="shotDots"></div>
+
+  <!-- источники -->
   <div class="grid g3">
     <article class="card reveal"><div class="num">AP-01</div><h3>RuStore</h3><p>Приложение проходит модерацию Vitrum/Мегафон-фонда. Как только карточка станет доступной, ссылка появится здесь.</p><span class="soon-tag">Скоро</span></article>
     <article class="card reveal"><div class="num">AP-02</div><h3>NashStore</h3><p>Независимый российский каталог. Приложение на модерации — следи за новостями в Telegram-канале экипажа.</p><span class="soon-tag">Скоро</span></article>
     <article class="card reveal"><div class="num">AP-03</div><h3>С сервера станции</h3><p>Прямая загрузка APK с нашего сервера — без посредников и каталогов. Честная установка, честные обновления.</p><a class="dl-btn" href="https://radio.ebxm.ru/app/ebx.apk" download>Скачать APK</a>
       <p class="note">При установке разреши «неизвестные источники» — это нормально. Обновления приложение проверяет само. <a href="https://radio.ebxm.ru/privacy" target="_blank" rel="noopener">Политика конфиденциальности</a></p></article>
   </div>
+
+  <!-- об этом приложении -->
+  <div class="about-app reveal">
+    <h4>Об этом приложении</h4>
+    <p class="get-sub">EBx NEURO ROCK для Android — эфир станции в кармане: перехват одним тапом, скачивание треков, пуши и узел новостей экипажа.</p>
+    <div class="grid g3 feat">
+      <div class="feat-i"><b>Перехват эфира</b><span>Вход в прямой эфир станции одним тапом</span></div>
+      <div class="feat-i"><b>Скачивание треков</b><span>Сохраняй релизы для офлайн-прослушивания</span></div>
+      <div class="feat-i"><b>Пуши о новых релизах</b><span>Узнавай о новинках первым</span></div>
+      <div class="feat-i"><b>Узел новостей экипажа</b><span>Лента станции внутри приложения</span></div>
+      <div class="feat-i"><b>Автообновления</b><span>Приложение проверяет обновления само</span></div>
+      <div class="feat-i"><b>Без рекламы</b><span>Никакой рекламы и трекеров</span></div>
+    </div>
+  </div>
+
+  <!-- что нового -->
+  <div class="whatsnew reveal">
+    <h4>Что нового <span class="ver">v1.1.0</span></h4>
+    <ul>
+      <li>Панель новостей экипажа: пуши и лента прямо в приложении</li>
+      <li>Скачивание треков для офлайн-прослушивания</li>
+      <li>Улучшенный перехват эфира — вход в станцию одним тапом</li>
+      <li>Мелкие исправления стабильности плеера</li>
+    </ul>
+  </div>
+
   <p class="get-sub" style="margin-top:44px">Слушать без установки можно прямо здесь, на <a href="/" style="text-decoration:underline;text-underline-offset:3px">ebxm.ru</a>.</p>
 </section>
+
+<!-- лайтбокс -->
+<div class="lb" id="lb" aria-hidden="true">
+  <button class="lb-x" id="lbX" aria-label="Закрыть">✕</button>
+  <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Предыдущий">‹</button>
+  <img class="lb-img" id="lbImg" alt="">
+  <button class="lb-arrow lb-next" id="lbNext" aria-label="Следующий">›</button>
+  <div class="lb-count" id="lbCount"></div>
+</div>
 </main><style id="page-css">
 .grid.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .dl-btn{display:inline-block;margin-top:18px;padding:13px 28px;font-family:var(--font-h);font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:#F4F4F5;border:1px solid var(--red-dark);background:#1A1A1E;text-decoration:none;transition:border-color .2s,background-color .2s}
@@ -106,6 +171,56 @@ html, body, a, button, label, .card, .dl-btn { cursor: auto !important; }
 .get-sub{color:var(--silver);font-size:16px;line-height:1.65;max-width:640px;margin:-24px 0 8px}
 .get-meta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 4px}
 .get-meta span{font-family:var(--font-h);font-size:13px;letter-spacing:.14em;color:var(--silver-dim);border:1px solid #2A2A2E;background:#101013;padding:6px 12px;text-transform:uppercase}
+
+/* ── стор-карточка ── */
+.app-head{display:flex;gap:22px;align-items:flex-start;margin:6px 0 22px;flex-wrap:wrap}
+.app-icon{width:96px;height:96px;border-radius:22%;border:1px solid #2A2A2E;flex:none}
+.app-head-info{flex:1;min-width:220px}
+.app-name{font-size:30px;margin:0 0 4px}
+.app-dev{color:var(--silver);font-size:14px;margin:0 0 12px}
+.app-dev a{color:var(--red);text-decoration:none}
+.app-dev a:hover{text-decoration:underline;text-underline-offset:3px}
+.app-cta{margin:0 0 34px}
+.dl-big{font-size:19px;padding:17px 34px;background:linear-gradient(180deg,var(--red-dark),#5E2E31);border-color:var(--red);margin-top:0}
+.dl-big:hover{border-color:var(--silver);filter:brightness(1.12)}
+.app-cta .note{color:var(--silver-dim);font-size:12.5px;line-height:1.55;margin-top:12px;max-width:560px}
+/* лента скриншотов */
+.shots-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 14px}
+.shots-head h4{font-family:var(--font-h);text-transform:uppercase;letter-spacing:.12em;font-size:15px;color:var(--white);margin:0}
+.shots-nav{display:flex;gap:8px}
+.shot-arrow{width:38px;height:38px;font:700 22px/1 var(--font-h);color:var(--silver);background:#101013;border:1px solid #2A2A2E;cursor:pointer;transition:border-color .2s,color .2s}
+.shot-arrow:hover{color:var(--white);border-color:var(--red)}
+.shots{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--red) #0D0D0F;padding:4px 0 10px;margin:0 -8px;cursor:grab}
+.shots.dragging{cursor:grabbing;scroll-snap-type:none}
+.shots::-webkit-scrollbar{height:8px}
+.shots::-webkit-scrollbar-track{background:#0d0d0f}
+.shots::-webkit-scrollbar-thumb{background:repeating-linear-gradient(-45deg,#a64b4e 0 8px,#743b3e 8px 16px)}
+.shot{height:420px;width:auto;border-radius:8px;border:1px solid #26262B;box-shadow:0 10px 34px rgba(0,0,0,.5);scroll-snap-align:center;flex:none;user-select:none;-webkit-user-drag:none;transition:transform .25s ease,filter .25s ease}
+.shots:not(.dragging) .shot:hover{transform:scale(1.02);filter:brightness(1.06)}
+.shots-dots{display:flex;gap:7px;justify-content:center;margin:2px 0 40px}
+.shots-dots i{width:8px;height:8px;border-radius:50%;background:#2A2A2E;transition:background .2s,transform .2s}
+.shots-dots i.on{background:var(--red);transform:scale(1.25)}
+@media (max-width:720px){.shot{height:56vh;max-height:560px}.app-name{font-size:24px}.app-icon{width:76px;height:76px}}
+/* об этом / что нового */
+.about-app,.whatsnew{margin:38px 0}
+.about-app h4,.whatsnew h4{font-family:var(--font-h);text-transform:uppercase;letter-spacing:.12em;font-size:15px;color:var(--white);margin:0 0 14px}
+.feat{margin-top:18px}
+.feat-i{display:flex;flex-direction:column;gap:6px;padding:16px 18px;border:1px solid #26262B;background:#101013;border-radius:6px}
+.feat-i b{font-family:var(--font-h);font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.feat-i span{color:var(--silver-dim);font-size:13px;line-height:1.5}
+.whatsnew .ver{color:var(--red);font-size:12px;letter-spacing:.14em;margin-left:8px}
+.whatsnew ul{margin:0;padding-left:20px;color:var(--silver);font-size:14.5px;line-height:1.85}
+/* лайтбокс */
+.lb{position:fixed;inset:0;z-index:400;display:none;align-items:center;justify-content:center;background:rgba(5,5,6,.94)}
+.lb.open{display:flex}
+.lb-img{max-height:92vh;max-width:94vw;border-radius:8px;border:1px solid #26262B;box-shadow:0 30px 90px rgba(0,0,0,.7)}
+.lb-x{position:fixed;top:16px;right:18px;width:44px;height:44px;font:700 20px/1 var(--font-h);color:var(--silver);background:#101013;border:1px solid #2A2A2E;cursor:pointer;z-index:2}
+.lb-x:hover{color:var(--white);border-color:var(--red)}
+.lb-arrow{position:fixed;top:50%;transform:translateY(-50%);width:52px;height:72px;font:700 34px/1 var(--font-h);color:var(--silver);background:#101013cc;border:1px solid #2A2A2E;cursor:pointer;z-index:2}
+.lb-arrow:hover{color:var(--white);border-color:var(--red)}
+.lb-prev{left:14px}.lb-next{right:14px}
+.lb-count{position:fixed;bottom:18px;left:0;right:0;text-align:center;font-family:var(--font-h);letter-spacing:.2em;font-size:13px;color:var(--silver-dim)}
+@media (max-width:720px){.lb-arrow{top:auto;bottom:12px;transform:none;width:46px;height:46px;font-size:26px}.lb-img{max-height:80vh}}
 </style><div class="ticker" aria-hidden="true"><div class="ticker-track">
   <span>АВТОРСКИЙ ЗВУК · ЖИВОЙ ДУХ</span><span>КРИЧИ ГРОМЧЕ АЛГОРИТМА</span><span>ПРОТЕСТ КАЖДЫЙ ДЕНЬ</span><span>НЕЙРОСЕТЬ НА ТВОЕЙ СТОРОНЕ</span><span>ЧЕЛОВЕК ЗАДАЁТ ДУХ — AI ПИШЕТ ЗВУК</span><span>РОК НЕ УМИРАЕТ</span>
   <span>АВТОРСКИЙ ЗВУК · ЖИВОЙ ДУХ</span><span>КРИЧИ ГРОМЧЕ АЛГОРИТМА</span><span>ПРОТЕСТ КАЖДЫЙ ДЕНЬ</span><span>НЕЙРОСЕТЬ НА ТВОЕЙ СТОРОНЕ</span><span>ЧЕЛОВЕК ЗАДАЁТ ДУХ — AI ПИШЕТ ЗВУК</span><span>РОК НЕ УМИРАЕТ</span>
@@ -144,5 +259,77 @@ html, body, a, button, label, .card, .dl-btn { cursor: auto !important; }
   </section>
 </div><footer class="site"><div class="wrap"><span>EBx MUSIC — твоя авторская радиостанция на основе AI</span><span>© <span id="year"></span> · Человек задаёт дух а машина пишет звук!</span></div></footer>
 <noscript><style>.player { transform: none !important; transition: none !important; }</style></noscript>
+<script>
+(function(){
+  var shots = document.getElementById('shots');
+  if (!shots) return;
+  var imgs = Array.prototype.slice.call(shots.querySelectorAll('.shot'));
+  var prev = document.getElementById('shotPrev'), next = document.getElementById('shotNext');
+  var dots = document.getElementById('shotDots');
+  var step = function(){ return imgs[0].offsetWidth + 18; };
+  var clampScroll = function(x){
+    var st = shots.scrollLeft + x;
+    st = Math.max(0, Math.min(shots.scrollWidth - shots.clientWidth, st));
+    return st - shots.scrollLeft;
+  };
+  prev.addEventListener('click', function(){ shots.scrollBy({ left: clampScroll(-step()), behavior: 'smooth' }); });
+  next.addEventListener('click', function(){ shots.scrollBy({ left: clampScroll(step()), behavior: 'smooth' }); });
+  // точки
+  imgs.forEach(function(){ var d = document.createElement('i'); dots.appendChild(d); });
+  var dotEls = Array.prototype.slice.call(dots.children);
+  var active = function(){
+    var pos = shots.scrollLeft / Math.max(1, shots.scrollWidth - shots.clientWidth);
+    var idx = Math.round(pos * (imgs.length - 1));
+    dotEls.forEach(function(d, k){ d.classList.toggle('on', k === idx); });
+    prev.disabled = shots.scrollLeft <= 4;
+    next.disabled = shots.scrollLeft >= shots.scrollWidth - shots.clientWidth - 4;
+    prev.style.opacity = prev.disabled ? .3 : 1;
+    next.style.opacity = next.disabled ? .3 : 1;
+  };
+  shots.addEventListener('scroll', function(){ requestAnimationFrame(active); }, { passive: true });
+  window.addEventListener('resize', active);
+  // drag-скролл мышью
+  var down = false, sx = 0, sl = 0, moved = 0;
+  shots.addEventListener('pointerdown', function(e){
+    if (e.pointerType !== 'mouse') return;
+    down = true; moved = 0; sx = e.clientX; sl = shots.scrollLeft;
+    shots.classList.add('dragging');
+  });
+  window.addEventListener('pointermove', function(e){
+    if (!down) return;
+    var dx = e.clientX - sx; moved = Math.abs(dx);
+    shots.scrollLeft = sl - dx;
+  });
+  window.addEventListener('pointerup', function(){ if (down) { down = false; shots.classList.remove('dragging'); } });
+  // лайтбокс
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'),
+      lbCount = document.getElementById('lbCount'), cur = 0;
+  function openLb(i){
+    cur = (i + imgs.length) % imgs.length;
+    lbImg.src = imgs[cur].src; lbImg.alt = imgs[cur].alt;
+    lbCount.textContent = (cur + 1) + ' / ' + imgs.length;
+    lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
+    document.documentElement.style.overflow = 'hidden';
+  }
+  function closeLb(){
+    lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true');
+    document.documentElement.style.overflow = '';
+  }
+  imgs.forEach(function(im, i){
+    im.addEventListener('click', function(){ if (moved < 6) openLb(i); });
+  });
+  document.getElementById('lbX').addEventListener('click', closeLb);
+  document.getElementById('lbPrev').addEventListener('click', function(){ openLb(cur - 1); });
+  document.getElementById('lbNext').addEventListener('click', function(){ openLb(cur + 1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') openLb(cur - 1);
+    if (e.key === 'ArrowRight') openLb(cur + 1);
+  });
+  active();
+})();
+</script>
 </body>
 </html>
