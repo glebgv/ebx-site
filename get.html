@@ -190,7 +190,7 @@ html, body, a, button, label, .card, .dl-btn { cursor: auto !important; }
 .shots-nav{display:flex;gap:8px}
 .shot-arrow{width:38px;height:38px;font:700 22px/1 var(--font-h);color:var(--silver);background:#101013;border:1px solid #2A2A2E;cursor:pointer;transition:border-color .2s,color .2s}
 .shot-arrow:hover{color:var(--white);border-color:var(--red)}
-.shots{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--red) #0D0D0F;padding:4px 0 10px;margin:0 -8px;cursor:grab}
+.shots{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--red) #0D0D0F;padding:4px 0 10px;margin:0 -8px;cursor:grab}
 .shots.dragging{cursor:grabbing;scroll-snap-type:none}
 .shots::-webkit-scrollbar{height:8px}
 .shots::-webkit-scrollbar-track{background:#0d0d0f}
@@ -266,7 +266,7 @@ html, body, a, button, label, .card, .dl-btn { cursor: auto !important; }
   var imgs = Array.prototype.slice.call(shots.querySelectorAll('.shot'));
   var prev = document.getElementById('shotPrev'), next = document.getElementById('shotNext');
   var dots = document.getElementById('shotDots');
-  var step = function(){ return imgs[0].offsetWidth + 12; };
+  var step = function(){ return imgs[0].offsetWidth + 8; };
   var clampScroll = function(x){
     var st = shots.scrollLeft + x;
     st = Math.max(0, Math.min(shots.scrollWidth - shots.clientWidth, st));
